@@ -1,0 +1,6 @@
+components 
+containers
+servic 
+        actions
+        reducers
+        constants
