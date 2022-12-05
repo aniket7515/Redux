@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Home = () => {
+const Home = (props) => {
+    console.log("props",props);
   return (
     <>
     <div>
@@ -22,7 +23,7 @@ const Home = () => {
             </span>
         </div>
         <div className='img-wrapper item'>
-            <button style={{backgroundColor:"#c1b814",color:"white"}}>Add to cart</button>
+            <button onClick={()=> props.addCartHandler({price:1000,namae:'i-phone'})}  style={{backgroundColor:"#c1b814",color:"white"}}>Add to cart</button>
         </div>
     </div>
     </>
