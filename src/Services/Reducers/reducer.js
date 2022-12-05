@@ -6,15 +6,15 @@ const initialState={
     cardData:[]
 }
 
-export default function cardItems(state=initialState,action){
+export default function cardItems(state=[],action){
     switch(action.type){
         case ADD_TO_CART:
             console.log("reducer",action);
-            return{
+            return[
                 ...state,
-                cardData:action.data
-            }
-            break;
+                {cardData:action.data}
+            ]
+            // break;
         default:
             return state
     }
