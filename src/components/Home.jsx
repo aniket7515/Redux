@@ -25,6 +25,7 @@ const Home = (props) => {
         </div>
         <div className='img-wrapper item'>
             <button onClick={()=> props.addCartHandler({price:1000,namae:'i-phone'})}  style={{backgroundColor:"#c1b814",color:"white"}}>Add to cart</button>
+            <button onClick={()=> props.removeToCartHandler()}  style={{backgroundColor:"#c1b814",color:"white"}}>remove to cart</button>
         </div>
     </div>
     </>

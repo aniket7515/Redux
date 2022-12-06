@@ -1,4 +1,4 @@
-import {ADD_TO_CART} from "../constants"   // stored in constants
+import {ADD_TO_CART, REMOVE_TO_CART} from "../constants"   // stored in constants
 export const addToCart=(data)=>{
     // console.log("action",data)
     return{
@@ -7,9 +7,9 @@ export const addToCart=(data)=>{
     }
 }
 
-// export const removeToCart=(data)=>{
-//     return{
-//         type:"REMOVE_TO_CART",
-//         data:data
-//     }
-// }
+export const removeToCart=(data)=>{
+    return{
+        type:"REMOVE_TO_CART",
+        data:data
+    }
+}
